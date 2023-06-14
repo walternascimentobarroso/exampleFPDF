@@ -4,5 +4,8 @@
         "psr-4": {
             "App\\": "app/"
         }
+    },
+    "require": {
+        "fpdf/fpdf": "^1.85"
     }
 }

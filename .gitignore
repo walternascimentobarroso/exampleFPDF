@@ -2,3 +2,6 @@
 vendor
 logs
 composer.lock
+public/download/*.jpg
+public/download/*.pdf
+.DS_Store
