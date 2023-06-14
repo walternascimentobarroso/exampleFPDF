@@ -1,8 +1,8 @@
 version: "3.9"
-name: default
+name: certificate
 services:
-  nginx_default:
-    container_name: nginx_default
+  nginx_certificate:
+    container_name: nginx_certificate
     image: nginx:1.23.3-alpine
     ports:
       - 80:80
@@ -11,9 +11,9 @@ services:
       - ../:/var/www
       - ../logs/nginx:/var/log/nginx
     links:
-      - php_default
-  php_default:
-    container_name: php_default
+      - php_certificate
+  php_certificate:
+    container_name: php_certificate
     build: ./php
     working_dir: /var/www
     volumes:
